@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// agrego comentarios para git luego del commit inicial 
 int main()
 {
     FILE *fhandler;

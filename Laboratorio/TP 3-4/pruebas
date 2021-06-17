@@ -1,0 +1,21 @@
+  return 0;
+}
+
+
+
+
+void guardar(char Matriz[20][20]) // paramentros que recibe de main
+
+{
+
+    FILE *archivo; // puntero
+
+    archivo = fopen("alumnos.txt", "a"); // lo abro, o lo creo
+
+    for (int i = 0; i < 5; i++) // lo que hago aca
+    {
+        fprintf(archivo, "%s %s \n", Matriz[i][0], Matriz[i][1]);
+    }
+
+    fclose(archivo); // cerrarlo
+}
